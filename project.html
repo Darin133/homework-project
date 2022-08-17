@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b48718a0b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Stretching</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 20px 0;
+      margin: 40px 20px 20px;
+      border-radius: 5px;
+      font-size: 34px;
+    }
+    h2 {
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      color: #fff;
+      font-size: 28px;
+    }
+    img {
+      max-width: 80%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+    p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.5;
+      font-size: 24px;
+      margin-bottom: 12px;
+      padding: 0 10px;
+    }
+    button {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-size: 36px;
+      display: block;
+      margin: 30px auto;
+      color: #fff;
+      background-color: #000;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.85;
+      cursor: pointer;
+    }
+    .box {
+      width: 55%;
+      background: linear-gradient(to top, #38ecbb 0%, #72b0d3 100%);
+      margin: 40px auto;
+      padding: 8px 15px;
+      border-radius: 10px;
+    }
+
+    .mainword {
+      font-weight: 600;
+    }
+    .info {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      color: #fff;
+      padding: 0 10px;
+    }
+    .flower-icon {
+      font-size: 100px;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h1>I love stretching</h1>
+      <h2>It is a great way to relax</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/257/original/Frame-5031-1-convert.io_.jpg?1656017110"
+        alt="Woman's stretching"
+      />
+      <hr />
+      <p>
+        <span class="mainword">Stretching</span> is a form of physical exercise
+        in which a specific muscle or tendon (or muscle group) is deliberately
+        flexed or stretched in order to improve the muscle's felt elasticity and
+        achieve comfortable muscle tone. The result is a feeling of increased
+        muscle <em>control</em>, flexibility, and range of motion. Stretching is
+        also used therapeutically to alleviate cramps and to improve function in
+        daily activities by increasing range of motion.
+      </p>
+      <i class="fa-light fa-alicorn"></i>
+      <a
+        class="info"
+        href="https://en.wikipedia.org/wiki/Stretching"
+        target="_blank"
+        >Read more on Wikipedia</a
+      >
+      <i class="fa-light fa-trillium flower-icon"></i>
+      <br />
+      <button>Try stretching 🧘‍♀️</button>
+    </div>
+    <script>
+      function conection() {
+        let name = prompt("What is your name?");
+        if (name.length > 0) {
+          alert(
+            `Thanks, ${name}, we will be in touch. Meawhile do stretching!`
+          );
+        } else {
+          alert(`We respect your privacy, but no metter do stretching`);
+        }
+      }
+
+      let askName = document.querySelector("button");
+      askName.addEventListener("click", conection);
+    </script>
+  </body>
+</html>
